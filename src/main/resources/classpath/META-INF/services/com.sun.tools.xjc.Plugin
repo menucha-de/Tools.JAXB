@@ -1,0 +1,5 @@
+havis.tools.jaxb.ClonePlugin
+havis.tools.jaxb.ConstructorPlugin
+havis.tools.jaxb.EqualsPlugin
+havis.tools.jaxb.InterfacePlugin
+havis.tools.jaxb.ToStringPlugin

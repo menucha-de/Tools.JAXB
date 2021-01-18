@@ -1,0 +1,10 @@
+# Create a copy "build.properties" of this file and change the properties
+
+# API repository URL
+api.url=http://{Host}/api
+
+# The ivy repository URL
+ivy.url=http://{Host}/ivy
+
+# The ivy default user directory
+#ivy.default.ivy.user.dir=/path/to/ivy/dir

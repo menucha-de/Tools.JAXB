@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns="urn:test:xsd:1" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="urn:test:xsd:1" version="1.0">
+
+	<xs:complexType name="AbstractType" abstract="true">
+		<xs:attribute name="index" type="xs:short" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="CloneType">
+		<xs:complexContent>
+			<xs:extension base="AbstractType">
+				<xs:sequence>
+					<xs:element name="id" type="xs:int" />
+					<xs:element name="name" type="xs:string" />
+					<xs:element name="single" type="InterfaceType" />
+					<xs:element name="multiple" type="InterfaceType" maxOccurs="unbounded" />
+					<xs:element name="another" type="ConstructorType" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="InterfaceType" />
+
+	<xs:complexType name="ConstructorType">
+		<xs:sequence>
+			<xs:element name="id" type="xs:int" />
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="type" type="InterfaceType" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="EqualsType">
+		<xs:sequence>
+			<xs:element name="id" type="xs:int" />
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="type" type="InterfaceType" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ToStringType">
+		<xs:complexContent>
+			<xs:extension base="AbstractType">
+				<xs:sequence>
+					<xs:element name="id" type="xs:int" />
+					<xs:element name="name" type="xs:string" />
+					<xs:element name="single" type="InterfaceType" />
+					<xs:element name="multiple" type="InterfaceType" maxOccurs="unbounded" />
+					<xs:element name="another" type="xs:string" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+</xs:schema>

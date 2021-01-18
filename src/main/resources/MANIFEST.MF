@@ -1,0 +1,6 @@
+Bundle-Name: Ha-VIS Tools JAXB
+Bundle-SymbolicName: havis.tools.jaxb
+Bundle-Vendor: permaMIC GmbH & Co. KG
+Bundle-Version: 2.6.0
+Implementation-Version: 2.6
+Bundle-ManifestVersion: 2
