@@ -1,6 +1,6 @@
 Bundle-Name: Ha-VIS Tools JAXB
 Bundle-SymbolicName: havis.tools.jaxb
-Bundle-Vendor: peraMIC GmbH & Co. KG
+Bundle-Vendor: Menucha Team <info@menucha.de>
 Bundle-Version: 2.7.0
 Implementation-Version: 2.7
 Bundle-ManifestVersion: 2
